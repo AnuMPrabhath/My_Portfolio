@@ -1,0 +1,26 @@
+#pre-loader {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#pre-loader > img {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#over-pre-loader {
+    position: absolute;
+    background: powderblue;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

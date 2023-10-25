@@ -1,0 +1,76 @@
+#skill_section {
+    position: relative;
+    background-color: #fff;
+    margin-left: 307px;
+    margin-top: -22px;
+    height: 100vh;
+}
+
+.skillSection_Div {
+    padding: 20px 20px 20px 20px;
+    background-color: #ECF9FF;
+    border: 2px solid #a4f1e3;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+#skill_section > div:first-child {
+    display: flex;
+}
+
+#skill_section > div:first-child > h1:last-child {
+    position: absolute;
+    margin-left: 520px;
+}
+
+#skill_section > div:first-child > h1:first-child {
+    margin-left: 20px;
+}
+
+#skill_section > samp {
+    display: flex;
+}
+
+#softSkills_div {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    margin-left: 50px;
+}
+
+
+.hardSkills-img {
+    width: 100px;
+}
+.hardSkills-img:hover{
+    transform: scale(1.5, 1.5);
+}
+
+#languages_div {
+    position: absolute;
+    width: 550px;
+    height: 150px;
+    margin-left: 550px;
+}
+strong {
+    position: absolute;
+    padding-left: 220px;
+    font-size: 25px;
+}
+
+#languages_div > img:first-child {
+    position: absolute;
+    width: 100px;
+}
+
+#software_div {
+    position: absolute;
+    width: 550px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 550px;
+}
+.img-wrapper{
+    position: absolute;
+    margin-top: 50px;
+}

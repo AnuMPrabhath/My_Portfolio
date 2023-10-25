@@ -1,0 +1,99 @@
+#contact_section {
+    position: relative;
+    background-color: #fff;
+    margin-left: 307px;
+    margin-top: -22px;
+}
+
+#contact_section > span {
+    display: flex;
+}
+
+#contact_section > span > div:first-child > input {
+    background-color: #C0EEF2;
+    width: 40px;
+    border-radius: 100%;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    margin: 0px 0px 40px 100px;
+}
+
+.mainLabels {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Calibri, serif;
+}
+.valueLabels {
+    font-size: 18px;
+}
+#location_label {
+    position: absolute;
+    top: 100px;
+    left: 180px;
+}
+#location_value_label {
+    position: absolute;
+    top: 140px;
+    left: 180px;
+}
+#email_label {
+    position: absolute;
+    left: 180px;
+    top: 190px;
+}
+#email_value_label {
+    position: absolute;
+    left: 180px;
+    top: 230px;
+}
+#call_label {
+    position: absolute;
+    left: 180px;
+    top: 280px;
+}
+#call_value_label {
+    position: absolute;
+    left: 180px;
+    top: 320px;
+}
+
+#contact_section > span > div:last-child {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    top: 70px;
+    left: 750px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.feedbackLabel {
+    font-family: Calibri, sans-serif;
+    font-size: x-large;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.feedbackInputs {
+    width: 310px;
+    height: 30px;
+    background-color: #ECF9FF;
+    margin-left: 30px;
+    border-radius: 10px;
+    border: 2px solid #a4f1e3;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#feedback-message {
+    background-color: #ECF9FF;
+    margin-left: 30px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: 2px solid #a4f1e3;
+}
+#sendBtn {
+    margin-left: 290px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    color: white;
+    background-color: rgba(0, 28, 48, 0.8);
+    cursor: pointer;
+}

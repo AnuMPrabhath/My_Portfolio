@@ -1,0 +1,213 @@
+*{
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+
+aside {
+    position: relative;
+    background: #001C30;
+    width: 307px;
+    height: 100%;
+    position: fixed;
+    display: flow;
+    x-index: 999;
+}
+
+aside > img {
+    position: absolute;
+    width: 140px;
+    border: 10px solid #2D4356;
+    border-radius: 100%;
+    top: 10px;
+    bottom: 0px;
+    left: 60px;
+    right: 0px;
+}
+
+aside > h1 {
+    position: absolute;
+    color: white;
+    padding-top: 130px;
+    padding-left: 20px;
+}
+
+#facebookIcon{
+    position: absolute;
+    background-color: #2D4356;
+    width: 35px;
+    border-radius: 100%;
+    margin-top: 170px;
+    margin-left: 40px;
+    transition: 1s;
+}
+#facebookIcon:hover{
+    transform: scale(0.8, 0.8);
+}
+#githubIcon {
+    position: absolute;
+    background-color: #2D4356;
+    width: 35px;
+    border-radius: 100%;
+    margin-top: 170px;
+    margin-left: 100px;
+    transition: 1s;
+}
+#githubIcon:hover{
+    transform: scale(0.8, 0.8);
+}
+#linkedinIcon {
+    position: absolute;
+    background-color: #2D4356;
+    width: 35px;
+    border-radius: 100%;
+    margin-top: 170px;
+    margin-left: 160px;
+    transition: 1s;
+}
+#linkedinIcon:hover{
+    transform: scale(0.8, 0.8);
+}
+#whatsappIcon {
+    position: absolute;
+    background-color: #2D4356;
+    width: 35px;
+    border-radius: 100%;
+    margin-top: 170px;
+    margin-left: 220px;
+    transition: 1s;
+}
+#whatsappIcon:hover{
+    transform: scale(0.8, 0.8);
+}
+.section_labels {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#home_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 200px;
+    margin-left: 90px;
+    transition: 1s;
+}
+.asideSectionBtn:hover .asideSectionImg{
+    transform: scale(1.5, 1.5);
+}
+#about_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 250px;
+    margin-left: 90px;
+    transition: 1s;
+}
+
+#assignment_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 300px;
+    margin-left: 90px;
+    transition: 1s;
+}
+
+#project_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 350px;
+    margin-left: 90px;
+    transition: 1s;
+}
+
+#gallery_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 400px;
+    margin-left: 90px;
+    transition: 1s;
+}
+
+#contact_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 450px;
+    margin-left: 90px;
+    transition: 1s;
+}
+
+#home_icon_label {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 220px;
+    transition: 1s;
+}
+.asideSectionBtn:hover .section_labels{
+    transform: scale(1.3, 1.3);
+    color: #00E7FF;
+}
+#about_icon_label {
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 150px;
+    transition: 1s;
+}
+
+#assignment_icon_label {
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 150px;
+    transition: 1s;
+}
+
+#project_icon_label {
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 150px;
+    transition: 1s;
+}
+
+#gallery_icon_label {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 420px;
+    transition: 1s;
+}
+
+#contact_icon_label {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 470px;
+    transition: 1s;
+}
+
+#designBy_label {
+    position: absolute;
+    color: white;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 70px;
+    margin-top: 475px;
+}
+
+#designBy2_label {
+    position: absolute;
+    color: #00E7FF;
+    font-style: oblique;
+    font-size: 15px;
+    margin-top: 478px;
+    margin-left: 175px;
+}
+
+.scrolling-box {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    #aside {
+        display: none;
+    }
+}

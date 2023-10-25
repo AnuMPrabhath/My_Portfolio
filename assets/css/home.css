@@ -1,0 +1,90 @@
+#home_section {
+    position: relative;
+    margin-left: 307px;
+}
+
+#my-4to {
+    position: absolute;
+    width: 80vw;
+    height: 100%;
+    top: 0px;
+
+    position: fixed;
+    display: flow;
+    x-index: 999;
+}
+
+#name_label {
+    font-size: 100px;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    font-weight: bold;
+    margin-top: 480px;
+    margin-left: 50px;
+}
+#name_label:hover{
+    color: papayawhip;
+}
+
+#underName-label {
+    position: absolute;
+    font-size: 50px;
+    z-index: 999;
+    color: white;
+    margin-top: 550px;
+    margin-left: 50px;
+}
+.loader {
+    position: absolute;
+    margin-top: 555px;
+    margin-left: 160px;
+    color: #00ffd9;
+    text-align: left;
+    font-size: 50px;
+    transform: translate(-8%, -8%);
+    z-index: 999;
+}
+
+.loader::after{
+    content:' |';
+}
+
+@media (width: 768px) {
+    #home_section {
+        position: relative;
+        margin-left: 0;
+        height: 100vh;
+
+    }
+
+    #my-4to {
+        /*width: 80%;
+        height: 100vh;
+        top: 0;
+        position: fixed;
+        display: flow;
+        x-index: 999;*/
+
+        display: none;
+    }
+
+    #name_label {
+        font-size: 100px;
+        position: absolute;
+        z-index: 999;
+        color: white;
+        font-weight: bold;
+        margin-top: 480px;
+        margin-left: 50px;
+    }
+
+    #underName-label {
+        position: absolute;
+        font-size: 50px;
+        z-index: 999;
+        color: white;
+        margin-top: 550px;
+        margin-left: 50px;
+    }
+}
