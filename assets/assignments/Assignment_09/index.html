@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 09</title>
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <script src="assets/lib/jquery.min.js"></script>
+
+  <style>
+    body {
+      background-color: #1a1d20;
+    }
+
+    div {
+      width: 80px;
+      aspect-ratio: 2/1;
+      background-color: white;
+        margin: 2px;
+        border-radius: 15px;
+        display: inline-flex;
+    }
+
+    h1 {
+      /*position: absolute;*/
+      color: red;
+     /* left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      margin: auto;*/
+        margin-left: 400px;
+    }
+
+    #start {
+        background-color: #00ff1b;
+
+    }
+
+    #stop {
+        background-color: #ff0016;
+        color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+<h1>JavaScript Knight Rider</h1>
+
+<section>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+</section>
+
+<section>
+    <button type="button" id="start">START?</button>
+    <button type="button" id="stop">STOP!</button>
+</section>
+<audio src="assets/audio/audio.mp3" id="audio"></audio>
+<script>
+    var currentLight = 0;
+    var currentDirection = "RIGHT";
+    var intervalID;
+
+    const updateLightPanel = () => {
+        if (currentDirection === "RIGHT"){
+            $(".light").css("background", "white");
+            $(".light").eq(currentLight-1).css("background", "orange");
+            $(".light").eq(currentLight++).css("background", "red");
+            $(".light").eq(currentLight).css("background", "orange");
+            if (currentLight == 5) {
+                currentDirection = "LEFT";
+            }
+        }else {
+            $(".light").css("background", "white");
+            $(".light").eq(currentLight+1).css("background", "orange");
+            $(".light").eq(currentLight--).css("background", "red");
+            $(".light").eq(currentLight).css("background", "orange");
+            if (currentLight == 0) {
+                currentDirection = "RIGHT";
+            }
+        }
+    }
+
+    $("#start").on("click", () => {
+        if (intervalID == null) {
+            intervalID = setInterval(updateLightPanel, 200);
+            $("#audio")[0].play();
+        }
+    });
+
+    $("#stop").on("click", () => {
+        clearInterval(intervalID);
+        intervalID = null;
+        $("#audio")[0].pause();
+    });
+
+</script>
+</body>
+</html>
