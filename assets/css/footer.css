@@ -1,0 +1,30 @@
+footer{
+    position: relative;
+    margin-left: 305px;
+    height: 60px;
+    background-color: #001C30;
+
+}
+#pageUpArrow{
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #0A6EBD;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#pageUpArrow>img{
+    width: 40px;
+    margin: 4px;
+}
+
+@media (max-width: 768px) {
+    footer{
+        position: relative;
+        margin-left: 0;
+        height: 50px;
+        background-color: #001C30;
+    }
+}

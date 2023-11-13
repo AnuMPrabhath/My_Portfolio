@@ -2,7 +2,7 @@
     position: relative;
     background-color: #fff;
     margin-left: 307px;
-    margin-top: 700px;
+    /*margin-top: 700px;*/
     height: 100vh;
 }
 
@@ -116,4 +116,370 @@ p {
     margin-top: 8px;
     font-weight: bold;
     text-align: center;
+}
+#aboutImageDiv{
+    height: fit-content;
+    width: fit-content;
+}
+#aboutImage{
+    position: absolute;
+    width: 18vw;
+    top: 30px;
+    right: 12vw;
+    transition: 1s;
+}
+#aboutImageBack{
+    position: absolute;
+    width: 30vw;
+    top: 30px;
+    right: 1vw;
+    transition: 1s;
+}
+#aboutImageBackStars{
+    position: absolute;
+    width: 35vw;
+    height: auto;
+    top: 120px;
+    right: 5vw;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s linear;
+}
+#aboutImageDiv:hover #aboutImage{
+    width: 18.5vw;
+    top: 15px;
+    right: 13vw;
+}
+#aboutImageDiv:hover #aboutImageBack{
+    width: 18vw;
+    top: 35px;
+    right: 4vw;
+}
+#aboutImageDiv:hover #aboutImageBackStars{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #about_section {
+        position: relative;
+        background-color: #fff;
+        margin-left: 0;
+        height: 850px;
+    }
+    #aboutImage{
+        width: 20vw;
+        top: auto;
+        right: auto;
+        bottom: 50px;
+        left: 120px;
+    }
+    #aboutImageBack{
+        width: 40vw;
+        top: auto;
+        right: auto;
+        bottom: 50px;
+        left: 100px;
+    }
+    #aboutImageBackStars{
+        position: absolute;
+        width: 45vw;
+        height: auto;
+        top: auto;
+        right: auto;
+        bottom: 0;
+        left: 20px;
+    }
+    #aboutImageDiv:hover #aboutImage{
+        position: absolute;
+        top: auto;
+        right: auto;
+        width: 21vw;
+        bottom: 60px;
+        left: 100px;
+    }
+    #aboutImageDiv:hover #aboutImageBack{
+        position: absolute;
+        top: auto;
+        right: auto;
+        width: 35vw;
+        bottom: 130px;
+        left: 150px;
+    }
+
+    .section_titles {
+        margin: 0;
+        padding-left: 30px;
+    }
+
+    p {
+        position: absolute;
+        font-size: 15px;
+        padding-left: 40px;
+        line-height: 35px;
+        letter-spacing: 1px;
+    }
+
+    #education_div {
+        position: absolute;
+        padding: 10px 10px 10px 10px;
+        margin-top: 250px;
+        margin-left: 490px;
+        background-color: #85CDFD;
+        border: 1px solid #0002A1;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        width: 200px;
+        height: 80px;
+    }
+    #education_div:hover{
+        border: 2px solid red;
+        box-shadow: 3px 3px 20px 8px rgba(0,0,0,0.25),
+        -3px -3px 20px 8px rgba(0,0,0,0.22);
+
+    }
+    #education_div > a > input {
+        position: absolute;
+        width: 80px;
+    }
+
+    #education_div > label {
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 15px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 10px;
+    }
+    #errorMsg{
+        position: absolute;
+        top: 0;
+        left: 90px;
+        color: #85CDFD;
+        font-size: 10px;
+    }
+    #skill_div {
+        position: absolute;
+        padding: 10px 10px 10px 10px;
+        margin-top: 50px;
+        margin-left: 450px;
+        background-color: #85CDFD;
+        border: 1px solid #0002A1;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        width: 200px;
+        height: 80px;
+    }
+    #skill_div:hover{
+        border: 2px solid #0002A1;
+        box-shadow: 3px 3px 20px 8px rgba(0,0,0,0.25),
+        -3px -3px 20px 8px rgba(0,0,0,0.22);
+    }
+    #skill_div > a > input {
+        position: absolute;
+        width: 80px;
+    }
+
+    #skill_div > label {
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 8px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #cv_div {
+        position: absolute;
+        padding: 5px 5px 5px 5px;
+        margin-top: 620px;
+        margin-left: 550px;
+        background-color: #D4DADA;
+        border: 1px solid #0002A1;
+        border-radius: 10px;
+        width: 100px;
+        height: 50px;
+    }
+
+    #cv_div > a > input {
+        position: absolute;
+        width: 40px;
+        margin-top: 5px;
+    }
+
+    #cv_div > label {
+        position: absolute;
+        margin-left: 45px;
+        margin-top: 5px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 426px) {
+    #about_section {
+        position: relative;
+        background-color: #fff;
+        margin-left: 0;
+        /*height: 850px;*/
+    }
+
+    #aboutImage{
+        width: 45vw;
+        top: auto;
+        right: auto;
+        bottom: 50px;
+        left: 40px;
+    }
+    #aboutImageBack{
+        width: 60vw;
+        top: auto;
+        right: auto;
+        bottom: 150px;
+        left: 100px;
+    }
+    #aboutImageBackStars{
+        position: absolute;
+        width: 65vw;
+        height: auto;
+        top: auto;
+        right: auto;
+        bottom: 20px;
+        left: 5px;
+    }
+    #aboutImageDiv:hover #aboutImage{
+        position: absolute;
+        top: auto;
+        right: auto;
+        width: 46vw;
+        bottom: 60px;
+        left: 30px;
+    }
+    #aboutImageDiv:hover #aboutImageBack{
+        position: absolute;
+        top: auto;
+        right: auto;
+        width: 50vw;
+        bottom: 200px;
+        left: 130px;
+    }
+
+    .section_titles {
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    p {
+        position: absolute;
+        font-size: 14px;
+        padding-left: 20px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+
+    #education_div {
+        position: absolute;
+        padding: 10px 10px 10px 10px;
+        margin-top: 480px;
+        margin-left: 290px;
+        background-color: #85CDFD;
+        border: 1px solid #0002A1;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        width: 80px;
+        height: 120px;
+    }
+    #education_div:hover{
+        border: 2px solid red;
+        box-shadow: 3px 3px 20px 8px rgba(0,0,0,0.25),
+        -3px -3px 20px 8px rgba(0,0,0,0.22);
+    }
+    #education_div > a > input {
+        position: absolute;
+        width: 50px;
+        left: 25px;
+    }
+
+    #education_div > label {
+        position: absolute;
+        margin-left: -8px;
+        margin-top: 60px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 10px;
+    }
+    #errorMsg{
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        color: #85CDFD;
+        font-size: 12px;
+        z-index: 99;
+        display: none;
+    }
+    #education_div:hover #errorMsg{
+        display: block;
+    }
+    #skill_div {
+        position: absolute;
+        padding: 10px 10px 10px 10px;
+        margin-top: 320px;
+        margin-left: 290px;
+        background-color: #85CDFD;
+        border: 1px solid #0002A1;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        width: 80px;
+        height: 120px;
+    }
+    #skill_div:hover{
+        border: 2px solid #0002A1;
+        box-shadow: 3px 3px 20px 8px rgba(0,0,0,0.25),
+        -3px -3px 20px 8px rgba(0,0,0,0.22);
+    }
+    #skill_div > a > input {
+        position: absolute;
+        width: 50px;
+        left: 25px;
+    }
+
+    #skill_div > label {
+        position: absolute;
+        margin-left: 0px;
+        margin-top: 50px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #cv_div {
+        position: absolute;
+        padding: 5px 5px 5px 5px;
+        margin-top: 640px;
+        margin-left: 260px;
+        background-color: #D4DADA;
+        border: 1px solid #0002A1;
+        border-radius: 10px;
+        width: 120px;
+        height: 50px;
+    }
+
+    #cv_div > a > input {
+        position: absolute;
+        width: 40px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    #cv_div > label {
+        position: absolute;
+        margin-left: 55px;
+        margin-top: 5px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 12px;
+        cursor: pointer;
+    }
 }

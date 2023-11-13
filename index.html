@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/assets/css/project.css">
     <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="stylesheet" href="/assets/css/gallery.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -27,6 +28,37 @@
         <div id="over-pre-loader"></div>
             <img src="assets/images/pre-loader.gif" width="100px">
     </div>
+
+    <header>
+        <img src="/assets/images/Dp_image.png" id="headerDpImg">
+        <h1>Anushka Prabhath</h1>
+        <div>
+            <a href="https://facebook.com/Anu%M%Prabhath"><img src="assets/images/icons8-facebook-64.png" id="headerFacebookIcon"></a>
+            <a href="https://github.com/AnuMPrabhath"><img src="assets/images/icons8-github-64.png" id="headerGithubIcon"></a>
+            <a href="https://www.linkedin.com/in/anu-m-prabhath-036a0726a/"><img src="assets/images/icons8-linkedin-60.png" id="headerLinkedinIcon"></a>
+            <a href="https://wa.me/qr/4M5WDAR7QTFYC1"><img src="assets/images/icons8-whatsapp-48.png" id="headerWhatsappIcon"></a>
+        </div>
+        <div>
+            <label id="headerDesignBy_label">Designed by </label>
+            <label id="headerDesignBy2_label">Prabhath</label>
+        </div>
+    </header>
+
+    <nav>
+        <div id="tab-nav-icon-open" class="nav-icon">
+            <img src="/assets/images/icons8-menu-64.png" class="nav-icon-img">
+        </div>
+        <div id="tab-nav-icon-close" class="nav-icon">
+            <img src="/assets/images/icons8-cancel-64.png" class="nav-icon-img">
+        </div>
+        <div id="mobile-nav-icon-open" class="mobile-nav-icon">
+            <img src="/assets/images/icons8-menu-64.png" class="nav-icon-img">
+        </div>
+        <div id="mobile-nav-icon-close" class="mobile-nav-icon">
+            <img src="/assets/images/icons8-cancel-64.png" class="nav-icon-img">
+        </div>
+
+    </nav>
 
     <aside id="aside">
         <img src="/assets/images/Dp_image.png" id="dpImg"><br>
@@ -74,16 +106,53 @@
         </div>
     </aside>
 
+    <section id="mobile-aside">
+        <a href="#home_section" class="asideSectionBtn">
+            <input type="image" src="assets/images/icons8-home-48.png" id="mobile-aside-home_icon" name="home" class="asideSectionImg">
+            <label for="mobile-aside-home_icon" class="section_labels" id="mobile-aside-home_icon_label">Home</label>
+        </a><br>
+
+        <a href="#about_section" class="asideSectionBtn">
+            <input type="image" src="assets/images/icons8-customer-64.png" id="mobile-aside-about_icon" name="about" class="asideSectionImg">
+            <label for="mobile-aside-about_icon" class="section_labels" id="mobile-aside-about_icon_label">About</label>
+        </a><br>
+
+        <a href="#assignment_section" class="asideSectionBtn">
+            <input type="image" src="assets/images/icons8-course-assign-50.png" id="mobile-aside-assignment_icon" name="assignment" class="asideSectionImg">
+            <label for="mobile-aside-assignment_icon" class="section_labels" id="mobile-aside-assignment_icon_label">Assignments</label>
+        </a><br>
+
+        <a href="#project_section" class="asideSectionBtn">
+            <input type="image" src="assets/images/icons8-project-80.png" id="mobile-aside-project_icon" name="project" class="asideSectionImg">
+            <label for="mobile-aside-project_icon" class="section_labels" id="mobile-aside-project_icon_label">Projects</label>
+        </a><br>
+
+        <a href="#gallery_section" class="asideSectionBtn">
+            <input type="image" src="assets/images/icons8-gallery-80.png" id="mobile-aside-gallery_icon" name="gallery" class="asideSectionImg">
+            <label for="mobile-aside-gallery_icon" class="section_labels" id="mobile-aside-gallery_icon_label">Gallery</label>
+        </a><br>
+
+        <a href="#contact_section" class="asideSectionBtn">
+            <input type="image" src="assets/images/icons8-contact-50.png" id="mobile-aside-contact_icon" name="contact" class="asideSectionImg">
+            <label for="mobile-aside-contact_icon" class="section_labels" id="mobile-aside-contact_icon_label">Contact</label>
+        </a><br>
+    </section>
+
     <section id="home_section">
-        <img src="assets/images/my4to.png" alt="" id="my-4to">
-        <label id="name_label">Anushka Prabhath</label><br>
+        <img src="assets/images/My4toNew.png" alt="my Photo" id="my-4to">
+        <img src="assets/images/my4to-tab-4n.jpg" alt="my Photo" id="my4to-tab-4n">
+        <label id="name_label">Anushka Prabhath</label>
         <label id="underName-label">I'm </label><div class="loader" id="loader"></div>
 
     </section>
 
     <section id="about_section">
         <h1 class="section_titles" data-aos="zoom-in-up">About me</h1>
-        <img src="assets/images/IMG-20230504-WA0012_2-removebg-preview.png" alt="" align="right">
+        <div id="aboutImageDiv">
+            <img src="/assets/images/aboutImageBackCircleGif.gif" alt="" id="aboutImageBack">
+            <img src="/assets/images/aboutImageBackStarGif.gif" alt="" id="aboutImageBackStars">
+            <img src="/assets/images/forAboutImageNew.png" alt="" id="aboutImage">
+        </div>
         <p>          Hey there! My name is M.Anushka Prabhath,<br>
             I’m from Western Province,Kalutara,Sri Lanka. I’m <br>
             undergraduate student at the Institute of Software <br>
@@ -119,7 +188,7 @@
         </div>
 
         <div id="cv_div">
-            <a href=""><input type="image" src="assets/images/downloads.png" id="cv" name="cv"></a>
+            <a href="/assets/documents/Anushka_Prabhath_CV.pdf" download="Anushka_Prabhath_CV.pdf"><input type="image" src="assets/images/downloads.png" id="cv" name="cv"></a>
             <label for="cv">Click here <br>download<br> my CV <br></label>
         </div>
     </section>
@@ -173,7 +242,10 @@
         <div class="wrapper-assignment">
 
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment01.jpg" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment01.jpg" alt="web" class="assignment-img">
+                    <label class="assignment-label">ONE</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment ONE</h1>
                     <div class="desc">
@@ -185,7 +257,10 @@
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment02.jpg" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment02.jpg" alt="web" class="assignment-img">
+                    <label class="assignment-label">TWO</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment TWO</h1>
                     <div class="desc">
@@ -196,108 +271,140 @@
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment03.webp" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment03.webp" alt="web" class="assignment-img">
+                    <label class="assignment-label">THREE</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment THREE</h1>
                     <div class="desc">
-                        <a href="/assets/assignments/Assignment_03/01_case/index.html" class="assignment-a">Case I</a>
-                        <a href="/assets/assignments/Assignment_03/02_case/index.html" class="assignment-a">Case II</a><br>
-                        <a href="/assets/assignments/Assignment_03/03_case/index.html" class="assignment-a">Case III</a>
-                        <a href="/assets/assignments/Assignment_03/04_case/index.html" class="assignment-a">Case IV</a><br>
-                        <a href="/assets/assignments/Assignment_03/05_case/index.html" class="assignment-a">Case V</a>
-                        <a href="/assets/assignments/Assignment_03/06_case/index.html" class="assignment-a">Case VI</a><br>
+                        <a href="/assets/assignments/Assignment_03/01_case" class="assignment-a">Case I</a>
+                        <a href="/assets/assignments/Assignment_03/02_case" class="assignment-a">Case II</a><br>
+                        <a href="/assets/assignments/Assignment_03/03_case" class="assignment-a">Case III</a>
+                        <a href="/assets/assignments/Assignment_03/04_case" class="assignment-a">Case IV</a><br>
+                        <a href="/assets/assignments/Assignment_03/05_case" class="assignment-a">Case V</a>
+                        <a href="/assets/assignments/Assignment_03/06_case" class="assignment-a">Case VI</a><br>
                         <a href="" class="assignment-a">Reade Codes</a>
                     </div>
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment04.webp" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment04.webp" alt="web" class="assignment-img">
+                    <label class="assignment-label">FOUR</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment FOUR</h1>
                     <div class="desc">
-                        <a href="http://localhost:63342/Assignment_04/Case_01/index.html?_ijt=73andnjh89h88hsda1n95mbdor&_ij_reload=RELOAD_ON_SAVE" class="assignment-a">Case I</a>
-                        <a href="" class="assignment-a">Case II</a><br>
-                        <a href="" class="assignment-a">Case III</a>
-                        <a href="" class="assignment-a">Case IV</a><br>
-                        <a href="" class="assignment-a">Case V</a>
-                        <a href="" class="assignment-a">Case VI</a><br>
-                        <a href="" class="assignment-a">Reade Codes</a>
+                        <a href="/assets/assignments/Assignment_04/Case_01" class="assignment-a">Case I</a>
+                        <a href="/assets/assignments/Assignment_04/Case_02" class="assignment-a">Case II</a><br>
+                        <a href="/assets/assignments/Assignment_04/Case_03" class="assignment-a">Case III</a>
+                        <a href="/assets/assignments/Assignment_04/Case_04" class="assignment-a">Case IV</a><br>
+                        <a href="/assets/assignments/Assignment_04/Case_05" class="assignment-a">Case V</a>
+                        <a href="/assets/assignments/Assignment_04/Case_06" class="assignment-a">Case VI</a><br>
+                        <a href="https://github.com/AnuMPrabhath/Assignment_04-IT" class="assignment-a">Reade Codes</a>
                     </div>
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment05.png" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment05.png" alt="web" class="assignment-img">
+                    <label class="assignment-label">FIVE</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment FIVE</h1>
                     <div class="desc">
                         <br>
-                        <a href="" class="assignment-a">Case I</a>
+                        <a href="https://github.com/AnuMPrabhath/My_Portfolio/tree/style" class="assignment-a">* Portfolio Codes & assets</a>
                         <br><br><br>
                     </div>
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment06.webp" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment06.webp" alt="web" class="assignment-img">
+                    <label class="assignment-label">SIX</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment SIX</h1>
                     <div class="desc">
                         <br>
-                        <a href="" class="assignment-a">Case I</a>
+                        <a href="https://github.com/AnuMPrabhath/Assignment_06-IT-Pos" class="assignment-a">* POS system UIs..</a>
                         <br><br><br>
                     </div>
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment07.png" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment07.png" alt="web" class="assignment-img">
+                    <label class="assignment-label">SEVEN</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment SEVEN</h1>
                     <div class="desc">
                         <br>
-                        <a href="" class="assignment-a">Case I</a>
-                        <br><br><br>
+                        <a href="https://github.com/AnuMPrabhath/Assignment_11-IT_POS/tree/master" class="assignment-a">* SinglePage Application(SPA) Using JavaScript</a>
+                        <br><br>
                     </div>
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment08.jpeg" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment08.jpeg" alt="web" class="assignment-img">
+                    <label class="assignment-label">EIGHT</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment EIGHT</h1>
                     <div class="desc">
                         <br>
-                        <a href="" class="assignment-a">Case I</a>
+                        <a href="/assets/assignments/Assignment_08/case_01" class="assignment-a">Case I</a>
+                        <a href="/assets/assignments/Assignment_08/case_02" class="assignment-a">Case II</a>
+                        <a href="https://github.com/AnuMPrabhath/Assignment_08-IT" class="assignment-a">Reade Codes</a>
                         <br><br><br>
                     </div>
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment09.jpg" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment09.jpg" alt="web" class="assignment-img">
+                    <label class="assignment-label">NINE</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment NINE</h1>
                     <div class="desc">
                         <br>
-                        <a href="" class="assignment-a">Case I</a>
+                        <a href="/assets/assignments/Assignment_09" class="assignment-a">Knight Rider</a>
+                        <a href="https://github.com/AnuMPrabhath/Assignment_09-IT" class="assignment-a">Reade Codes</a>
                         <br><br><br>
                     </div>
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment10.jpg" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment10.jpg" alt="web" class="assignment-img">
+                    <label class="assignment-label">TEN</label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment TEN</h1>
                     <div class="desc">
                         <br>
-                        <a href="" class="assignment-a">Case I</a>
+                        <a href="https://github.com/AnuMPrabhath/My_Portfolio/tree/style" class="assignment-a">* Portfolio Codes</a>
                         <br><br><br>
                     </div>
                 </div>
             </div>
             <div class="card-assignment">
-                <div class="poster-assignment"><img src="/assets/images/assignment11.jpg" alt="web" class="assignment-img"></div>
+                <div class="poster-assignment">
+                    <img src="/assets/images/assignment11.jpg" alt="web" class="assignment-img">
+                    <label class="assignment-label">ELEVEN
+                    </label>
+                </div>
                 <div class="details-assignment">
                     <h1 class="assignment-title">Assignment ELEVEN</h1>
                     <div class="desc">
                         <br>
-                        <a href="" class="assignment-a">Case I</a>
+                        <a href="/assets/assignments/Assignment_07-11_POS-SPA" class="assignment-a">Pos System</a>
+                        <a href="https://github.com/AnuMPrabhath/Assignment_11-IT_POS/tree/master" class="assignment-a">Reade Codes</a>
                         <br><br><br>
                     </div>
                 </div>
@@ -351,9 +458,9 @@
                 <div class="content">
                     <h2 class="projectCardH2">Hostel Management System</h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        <!--Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Architecto, hic? Magnam eum error saepe doloribus corrupti
-                        repellat quisquam alias doloremque!
+                        repellat quisquam alias doloremque!-->
                     </p>
                     <a href="https://github.com/AnuMPrabhath/Hostal-Management-System_ORM">Read More</a>
                 </div>
@@ -367,11 +474,11 @@
                 <div class="content">
                     <h2 class="projectCardH2">POS System for PhoneShop<br>-Single Web Page Application-</h2>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        <!--Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Architecto, hic? Magnam eum error saepe doloribus corrupti
-                        repellat quisquam alias doloremque!
+                        repellat quisquam alias doloremque!-->
                     </p>
-                    <a href="https://github.com/AnuMPrabhath/Assignment_07-IT-SPA_POS">Read More</a>
+                    <a href="https://github.com/AnuMPrabhath/Assignment_11-IT_POS/tree/master">Read More</a>
                 </div>
             </div>
         </div>
@@ -399,7 +506,7 @@
                     <figure class="shadow"><img src="/assets/images/gallery16.jpg" class="gallery-img"/></figure>
                     <figure class="shadow"><img src="/assets/images/gallery14.jpg" class="gallery-img"/></figure>
                     <figure class="shadow"><img src="/assets/images/gallery17.jpg" class="gallery-img"/></figure>
-                    <figure class="shadow"><img src="/assets/images/minions-group.jpg" class="gallery-img"/></figure>
+                    <figure class="shadow"><img src="/assets/images/inovestaTeam.jpg" class="gallery-img"/></figure>
                 </div>
             </div>
         </section>
@@ -449,7 +556,7 @@
                     <div class="gmap_canvas">
                         <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=350&amp;hl=en&amp;q=Kuruluketiya ( Birds Garden) කුරුලු කැටිය, Kalutara, Sri Lanka&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     </div>
-                        <style>.mapouter{position:relative;text-align:right;width:600px;height:350px;}.gmap_canvas {overflow:hidden;background:none!important;width:700px;height:350px;}.gmap_iframe {width:800px!important;height:320px!important;margin: 0px 50px!important;}</style>
+                        <style>.mapouter{position:relative;text-align:right;width:600px;height:350px;}.gmap_canvas {overflow:hidden;background:none!important;width:700px;height:350px;}.gmap_iframe {width:800px;height:320px!important;margin: 0px 50px!important;}</style>
                 </div>
 
             </div>
@@ -471,6 +578,10 @@
             </div>
         </span>
     </section>
+
+    <footer>
+        <a href="#home_section"><div id="pageUpArrow"><img src="/assets/images/icons8-up-64.png"></div></a>
+    </footer>
 
 <script src="/assets/lib/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -500,7 +611,9 @@
 
 </script>-->
 <script src="/assets/js/pre-loader-js.js"></script>
+<script src="/assets/js/navIconController.js"></script>
 <script src="/assets/js/home.js"></script>
 <script src="/assets/js/gallery-js.js"></script>
+<script src="/assets/js/message-js.js"></script>
 </body>
 </html>

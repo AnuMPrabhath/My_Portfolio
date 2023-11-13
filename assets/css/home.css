@@ -1,26 +1,28 @@
 #home_section {
     position: relative;
     margin-left: 307px;
+    margin-top: 0;
+    height: 100vh;
 }
 
 #my-4to {
-    position: absolute;
     width: 80vw;
     height: 100%;
-    top: 0px;
-
+    top: 0;
     position: fixed;
     display: flow;
     x-index: 999;
 }
-
+#my4to-tab-4n {
+    display: none;
+}
 #name_label {
     font-size: 100px;
     position: absolute;
     z-index: 999;
     color: white;
     font-weight: bold;
-    margin-top: 480px;
+    margin-top: 420px;
     margin-left: 50px;
 }
 #name_label:hover{
@@ -32,12 +34,12 @@
     font-size: 50px;
     z-index: 999;
     color: white;
-    margin-top: 550px;
+    margin-top: 505px;
     margin-left: 50px;
 }
 .loader {
     position: absolute;
-    margin-top: 555px;
+    margin-top: 507px;
     margin-left: 160px;
     color: #00ffd9;
     text-align: left;
@@ -50,41 +52,85 @@
     content:' |';
 }
 
-@media (width: 768px) {
+
+@media (max-width: 768px) {
     #home_section {
-        position: relative;
         margin-left: 0;
-        height: 100vh;
-
+        margin-top: 0;
+        width: 100vw;
+        height: 1024px;
     }
-
     #my-4to {
-        /*width: 80%;
-        height: 100vh;
-        top: 0;
-        position: fixed;
-        display: flow;
-        x-index: 999;*/
-
         display: none;
     }
-
-    #name_label {
-        font-size: 100px;
-        position: absolute;
-        z-index: 999;
-        color: white;
-        font-weight: bold;
-        margin-top: 480px;
-        margin-left: 50px;
+    #my4to-tab-4n {
+        display: block;
+        width: 100vw;
+        height: 1024px;
+        top: 0;
+        position: fixed;
+        x-index: 999;
     }
-
+    #name_label {
+        font-size: 80px;
+        margin-top: 520px;
+    }
     #underName-label {
         position: absolute;
         font-size: 50px;
         z-index: 999;
         color: white;
-        margin-top: 550px;
+        margin-top: 590px;
         margin-left: 50px;
+    }
+    .loader {
+        position: absolute;
+        margin-top: 595px;
+        margin-left: 160px;
+        color: #00ffd9;
+        text-align: left;
+        font-size: 50px;
+        transform: translate(-8%, -8%);
+        z-index: 999;
+    }
+}
+
+@media (max-width: 426px) {
+    #home_section {
+        margin-left: 0;
+        margin-top: 50vw;
+        width: 100vw;
+        height: 100vh;
+    }
+    #my4to-tab-4n {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        margin-top: 50vw;
+        position: fixed;
+        x-index: 999;
+    }
+    #name_label {
+        font-size: 48px;
+        margin-top: 400px;
+        margin-left: 10px;
+    }
+    #underName-label {
+        position: absolute;
+        font-size: 40px;
+        z-index: 999;
+        color: white;
+        margin-top: 450px;
+        margin-left: 10px;
+    }
+    .loader {
+        position: absolute;
+        margin-top: 457px;
+        margin-left: 100px;
+        color: #00ffd9;
+        text-align: left;
+        font-size: 35px;
+        transform: translate(-8%, -8%);
+        z-index: 999;
     }
 }

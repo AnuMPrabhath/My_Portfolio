@@ -97,3 +97,85 @@
     background-color: rgba(0, 28, 48, 0.8);
     cursor: pointer;
 }
+
+
+@media (max-width: 768px) {
+    #contact_section {
+        position: relative;
+        background-color: #fff;
+        margin-left: 0;
+        width: 100%;
+        height: 1500px;
+    }
+    #contact_section > span > div:last-child {
+        position: absolute;
+        width: 400px;
+        height: 600px;
+        top: 750px;
+        left: 50px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+}
+
+@media (max-width: 426px) {
+    /*.gmap_canvas {
+        overflow: hidden;
+        background: none!important;
+        width: 90vw;
+        height: 350px;
+    }*/
+    #contact_section > span > div:last-child {
+        width: 90vw;
+        left: 13px;
+    }
+    .feedbackInputs {
+        width: 65vw;
+        height: 30px;
+        background-color: #ECF9FF;
+        margin-left: 30px;
+        border-radius: 10px;
+        border: 2px solid #a4f1e3;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #feedback-message {
+        background-color: #ECF9FF;
+        margin-left: 30px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10px;
+        border: 2px solid #a4f1e3;
+        width: 65vw;
+    }
+    .valueLabels {
+        font-size: 16px;
+    }
+    #location_value_label{
+        position: absolute;
+        left: 150px;
+    }
+    #email_value_label{
+        position: absolute;
+        left: 150px;
+    }
+    #call_value_label{
+        position: absolute;
+        left: 150px;
+    }
+    .mapouter {
+        position: relative;
+        text-align: right;
+        width: 85vw;
+        height: 350px;
+    }
+    .gmap_canvas {
+        overflow: hidden;
+        background: none!important;
+        width: 85vw;
+        height: 350px;
+    }
+    .gmap_iframe {
+        width: 85vw;
+        height: 320px!important;
+        margin: 0px 50px!important;
+    }
+}

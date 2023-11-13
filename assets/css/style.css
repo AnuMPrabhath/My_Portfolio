@@ -6,11 +6,11 @@ body {
 }
 
 aside {
-    position: relative;
     background: #001C30;
     width: 307px;
     height: 100%;
     position: fixed;
+    top: 0;
     display: flow;
     x-index: 999;
 }
@@ -21,9 +21,9 @@ aside > img {
     border: 10px solid #2D4356;
     border-radius: 100%;
     top: 10px;
-    bottom: 0px;
+    bottom: 0;
     left: 60px;
-    right: 0px;
+    right: 0;
 }
 
 aside > h1 {
@@ -185,11 +185,11 @@ aside > h1 {
 #designBy_label {
     position: absolute;
     color: white;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-weight: bold;
     font-size: 18px;
     margin-left: 70px;
-    margin-top: 475px;
+    margin-top: 470px;
 }
 
 #designBy2_label {
@@ -197,8 +197,8 @@ aside > h1 {
     color: #00E7FF;
     font-style: oblique;
     font-size: 15px;
-    margin-top: 478px;
-    margin-left: 175px;
+    margin-top: 473px;
+    margin-left: 180px;
 }
 
 .scrolling-box {
@@ -206,8 +206,282 @@ aside > h1 {
     scroll-behavior: smooth;
 }
 
+/*---------     mobile aside    ---------*/
+#mobile-aside{
+    background: #001C30;
+    width: 200px;
+    height: 100%;
+    /*height: calc(100vh - 50vw);*/
+    position: fixed;
+    top: 50vw;
+    x-index: 999;
+
+    display: none;
+}
+#mobile-aside-home_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+#mobile-aside-about_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 100px;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+#mobile-aside-assignment_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 150px;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+#mobile-aside-project_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 200px;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+#mobile-aside-gallery_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 250px;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+#mobile-aside-contact_icon {
+    position: absolute;
+    width: 40px;
+    margin-top: 300px;
+    margin-left: 30px;
+    transition: 1s;
+}
+
+#mobile-aside-home_icon_label {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 60px;
+    transition: 1s;
+}
+
+#mobile-aside-about_icon_label {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 90px;
+    transition: 1s;
+}
+
+#mobile-aside-assignment_icon_label {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 90px;
+    transition: 1s;
+}
+
+#mobile-aside-project_icon_label {
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 90px;
+    transition: 1s;
+}
+
+#mobile-aside-gallery_icon_label {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 260px;
+    transition: 1s;
+}
+
+#mobile-aside-contact_icon_label {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 310px;
+    transition: 1s;
+}
+
+
+/*----------    Header  --------------*/
+header{
+    display: none;
+    position: fixed;
+    width: 425px;
+    height: calc(50vw);
+    background: #001C30;
+    top: 0;
+    z-index: 9999;
+}
+#headerDpImg{
+    position: absolute;
+    width: calc(35vw);
+    border: 5px solid #2D4356;
+    border-radius: 100%;
+    top: 20px;
+    left: 10px;
+}
+header > h1 {
+    position: absolute;
+    color: white;
+    padding-top: 5px;
+    padding-left: 140px;
+    font-size: 28px;
+}
+#headerFacebookIcon{
+    position: absolute;
+    background-color: #2D4356;
+    width: 25px;
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 180px;
+    padding: 2px;
+    transition: 1s;
+}
+#headerFacebookIcon:hover{
+    transform: scale(0.8, 0.8);
+}
+#headerGithubIcon {
+    position: absolute;
+    background-color: #2D4356;
+    width: 25px;
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 230px;
+    padding: 2px;
+    transition: 1s;
+}
+#headerGithubIcon:hover{
+    transform: scale(0.8, 0.8);
+}
+#headerLinkedinIcon {
+    position: absolute;
+    background-color: #2D4356;
+    width: 25px;
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 280px;
+    padding: 2px;
+    transition: 1s;
+}
+#headerLinkedinIcon:hover{
+    transform: scale(0.8, 0.8);
+}
+#headerWhatsappIcon {
+    position: absolute;
+    background-color: #2D4356;
+    width: 25px;
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 330px;
+    padding: 2px;
+    transition: 1s;
+}
+#headerWhatsappIcon:hover{
+    transform: scale(0.8, 0.8);
+}
+#headerDesignBy_label {
+    position: absolute;
+    color: white;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 240px;
+    margin-top: 95px;
+}
+
+#headerDesignBy2_label {
+    position: absolute;
+    color: #00E7FF;
+    font-style: oblique;
+    font-size: 10px;
+    margin-top: 98px;
+    margin-left: 320px;
+}
+/*----------    nav     ------------*/
+nav > .nav-icon{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #0A6EBD;
+    border-radius: 100%;
+    right: 5vw;
+    top: 5vw;
+    margin: auto;
+    z-index: 9999;
+
+    display: none;
+}
+nav > .mobile-nav-icon{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background-color: #0A6EBD;
+    border-radius: 100%;
+    right: 5vw;
+    top: 35vw;
+    margin: auto;
+    z-index: 9999;
+
+    display: none;
+}
+.nav-icon-img{
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     #aside {
+        background: #001C30;
+        width: 307px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        x-index: 9999;
+
+        display: none;
+    }
+    #tab-nav-icon-open{
+        display: block;
+    }
+    #tab-nav-icon-close{
+        display: none;
+    }
+    #mobile-nav-icon-open{
+        display: none;
+    }
+    #mobile-nav-icon-close{
+        display: none;
+    }
+
+}
+
+@media (max-width: 426px) {
+    header{
+        display: block;
+    }
+    #aside{
+        display: none;
+    }
+    #mobile-nav-icon-open{
+        display: block;
+    }
+    #tab-nav-icon-open{
+        display: none;
+    }
+    #tab-nav-icon-close{
         display: none;
     }
 }
+
